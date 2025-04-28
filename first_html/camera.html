@@ -2,9 +2,10 @@
 <html>
 
 <head>
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">  
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -22,48 +23,322 @@
   <div class="sidebar">
     <div id="sidetext">
       <h3>Cameras</h3>
-      <p id="sidelink"><a href="#info"></a>Info</p>
+      <a id="sidelink" href="#info">Info</a> <br>
+      <a id="sidelink" href="#camTypes">Camera Types</a> <br> <br>
+      <a id="sidelink" href="#products" style="font-size: 22px;">Products</a> <br>
+      <a id="sidelink" href="#LECams">Low-end</a> <br>
+      <a id="sidelink" href="#MRCams">Mid-range</a> <br>
+      <a id="sidelink" href="#HECams">High-end</a> <br>
 
     </div>
 
   </div>
 
   <div id="content">
-    <h1>Cameras</h1>
-    <h2 id="info">Useful Information</h2>
+    <h1 id="info">Cameras</h1>
+
+    <h2>Useful Information</h2>
     <p>When purchasing a camera it's important to know what the specifications for cameras mean.</p>
     <p>First you need to determine what the camera will be used for, some cameras are better for video while some are
       better for pictures.</p>
-    <p>Below are some good things to look out for when deciding what camera to get.</p>
     <br>
-    <div id="camTypes">
+    <p>When looking at image quality the 2 things to look out for are sensor size, and megapixels.</p>
+    <p>Bigger Sensors usually mean better quality. Megapixels are important, but after about 20MP they don't matter as
+      much. Unless you're printing huge photos.</p>
+    <p>It's also important to check out the lense; can the lens be changed? Are their good lenses avaible for the
+      model/brand you're buying.</p>
+    <br>
+    <p>Check if the camera can record video. If so, check for things like resolution(e.g 4K, 1080p), frame-rates(e.g
+      24fps for cinematics, 60fps for smooth motion), </p>
+    <p>microphone input, and flip screen before making a final purchase. </p>
+    <p id="camTypes">Things like auto focus, low-light performance, battery life, and ease of use are also important to
+      check before
+      deciding on a camera. </p>
+
+    <br>
+    <div>
+      <!--Camera Table-->
       <h2>Camera Types</h2>
-      <dl>
-        <dt>DSLR</dt>
-        <dd>Better battery life, optical viewfinder, lense variety</dd>
-        <dt>Mirrorless</dt>
-        <dd>Smaller/lighter, better video performance, electronic viewfinder</dd>
-      </dl>
+      <hr style="border: 2px solid rgb(255, 255, 255); width:700px">
+      <table>
+        <tr style="font-size:20px;">
+          <th>Camera Type</th>
+          <th>Size/Weight</th>
+          <th>Skill Level</th>
+          <th>Photos</th>
+          <th>Videos</th>
+        </tr>
+        <tr>
+          <td>Mirrorless</td>
+          <td>Medium</td>
+          <td>Beginner-Pro </td>
+          <td>X</td>
+          <td>X</td>
+        </tr>
+        <tr>
+          <td>DSLR</td>
+          <td>Heavy</td>
+          <td>Beginner-Pro</td>
+          <td>X</td>
+          <td>X</td>
+        </tr>
+        <tr>
+          <td>Action Camera</td>
+          <td>Tiny</td>
+          <td>Beginner</td>
+          <td>X</td>
+          <td>X</td>
+        </tr>
+        <tr>
+          <td>Film Camera</td>
+          <td>Medium</td>
+          <td>Intermediate</td>
+          <td>X</td>
+          <td>X</td>
+        </tr>
+        <tr>
+          <td>Instant Camera</td>
+          <td>Light</td>
+          <td>Beginner</td>
+          <td>X</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Point & Shoot</td>
+          <td>Light</td>
+          <td>Beginner</td>
+          <td>X</td>
+          <td>X</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
     </div>
+    <br>
+
+    <!--Products-->
+    <div id="products">
+      <h2>Products</h2>
+      <!--Low End Cameras-->
+      <div id="LECams">
+        <br>
+        <h2>Low-End Cameras</h2>
+
+        <div id="phone" style="width:700px">
+          <hr style="border: 2px solid rgb(255, 255, 255);">
+          <h3>Phone</h3>
+
+          <p>
+            <img src="/images/iphone.png" alt="Picture of iPhone" style="float:right; width:150px; margin:0;">
+            Your phone may be the best option to start with. Any iPhone past the 15 has a 48MP camera.
+            Its ease of use, compatibility and portability make it a good option for beginner creators.
+            Phones also allow for 3rd party hardware such as lenses and microphones.
+            The downsides of using your phone are storage, and wear and tear from daily use.
+          </p>
+          <br>
+          <p><b>Camera Quality: </b>8/10</p>
+          <p><b>Audio Quality: </b>7/10</p>
+          <p><b>Skill Level: </b>Beginner</p>
+          <p><b>Price: </b>Varies</p>
+          <p><b>Usecase: </b>Daily or beginner photography/videography </p>
+          <a href="https://www.youtube.com/watch?v=cgXcmF6G7_s&ab_channel=WistiaStudios"
+            style="color:white;"><b>Tutorial/Tips</b></a>
+          <hr style="border: 2px solid rgb(255, 255, 255);">
+        </div>
+
+        <div id="WD08" style="width:700px">
+          <a style="color:white; font-size:22px;"
+            href="https://www.amazon.com/Digital-Photography-Vlogging-YouTube-Beginner/dp/B0BQRVCGHC/ref=asc_df_B0BQRVCGHC?mcid=22ce09bf005232b48cf78f5f2663e9aa&hvocijid=4487655705153177934-B0BQRVCGHC-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=4487655705153177934&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9003544&hvtargid=pla-2281435178538&th=1">
+            <h3>WD08 Digital Camera</h3>
+          </a>
+
+          <p>
+            <img src="/images/WD08cam.png" alt="Picture of WD08 camera" style="float:right; width:150px; margin:0;">
+            This digital point and shoot camera advertises 4K, 64MP video at 30fps. It's less compact than a phone, but
+            more compact than most other cameras.
+            This camera features a flipable display, 1 hour battery life, 32GB microSD, and a built in microphone. The
+            issue with this camera lies in it's sensor and microphone.
+            There seems to be no external microphone input meaning users must either have poor audio, or record audio on
+            a different device. A small sensor also means that the camera is unable to utilize
+            all 64MP, causing the quality to drop. Cheaper cameras often advertise high megapixels despite having a small sensor.
+          </p>
+          <br>
+          <p><b>Camera Quality: </b>5/10</p>
+          <p><b>Audio Quality: </b>3/10</p>
+          <p><b>Skill Level: </b>Beginner</p>
+          <p><b>Price: </b>$60-$80</p>
+          <p><b>Usecase: </b>Family photos/memories </p>
+
+          <a href="https://www.youtube.com/playlist?list=PLH3ph2DR9syV6PxFJR2ueD-siQwQ2dnsXs" style="color:white;"><b>Tutorial/Tips</b></a>
+
+        </div>
+      </div>
+
+      <br><br>
+      <!--MidRange Cameras-->
+      <div id="MRCams">        
+        <h2>Mid-Range Cameras</h2>
+        <div id="Sony ZV-1" style="width:700px">
+          <hr style="border: 2px solid rgb(255, 255, 255);">
+          <a style="color:white; font-size:22px;"
+            href="https://www.amazon.com/Sony-Camera-Content-Creators-Vloggers/dp/B0BHKKHNHM/ref=asc_df_B0BHKKHNHM?mcid=e000a69547a936169fd4cd5d4bf2c234&hvocijid=608811730627778513-B0BHKKHNHM-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=608811730627778513&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9003544&hvtargid=pla-2281435179298&th=1">
+            <h3>Sony ZV-1</h3>
+          </a>
+
+          <p>
+            <img src="/images/sonyzv1.png" alt="Picture of Sony ZV-1" style="float:right; width:200px; margin:0;">
+            This point and shoot camera was made famous by popular creators on Youtube. This camera offers 20.1MP with a 1" sensor,
+            meaning high quality is attainable. This camera comes with an exterior microphone allowing for higher audio quality out of the box.
+            This compact and portable camera offers an articulating flip screen along with an ultra-wide 20mm lens. The screen allows you to see yourself, 
+            and the lens allows you to get everything in frame. This camera allows for different external mics to be used. This camera also offers auto focus up to 24fps.
+
+          </p>
+          <br>
+          <p><b>Camera Quality: </b>9/10</p>
+          <p><b>Audio Quality: </b>8/10</p>
+          <p><b>Skill Level: </b>Beginner</p>
+          <p><b>Price: </b>$400</p>
+          <p><b>Usecase: </b>Vlogging</p>
+
+          <a href="https://www.youtube.com/watch?v=0B1Jt-hZm5I&ab_channel=PhilipLemoine" style="color:white;"><b>Tutorial/Tips</b></a>
+
+          <hr style="border: 2px solid rgb(255, 255, 255);">
+        </div>
+
+        <div id="M50" style="width:700px">
+          <a style="color:white; font-size:22px;"
+            href="https://www.amazon.com/Canon-Mirrorless-EF-M15-45mm-Certified-Refurbished/dp/B07DVPL1HG/ref=asc_df_B07DVPL1HG?mcid=69bcc21ec517303cb7b11ce4cf7d6616&hvocijid=17776892384650706432-B07DVPL1HG-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=17776892384650706432&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9003544&hvtargid=pla-2281435177658&psc=1">
+            <h3>Canon EOS M50</h3>
+          </a>
+
+          <p>
+            <img src="/images/CanonM50.png" alt="Picture of Canon EOS M50" style="float:right; width:150px; margin:0;">
+           This Mirrorless DSLR camera allows users to film 4k video up to 23fps, 1080p 60fps, or 720p 120fps which allows for slow motion.
+           The image quality on this camera is superb, but it's built in audio is somewhat lacking. This camera was designed with an exterior microphone in mind.
+           This camera is also compatible with many different lenses allowing for more diverse shots.
+          </p>
+          <br>
+          <p><b>Camera Quality: </b>9/10</p>
+          <p><b>Audio Quality: </b>6/10</p>
+          <p><b>Skill Level: </b>Beginner-Intermediate</p>
+          <p><b>Price: </b>$570</p>
+          <p><b>Usecase: </b>Photography, 1080p video </p>
+
+          <a href="https://www.youtube.com/watch?app=desktop&v=94xOOILL9iM&ab_channel=TbonesTech" style="color:white;"><b>Tutorial/Tips</b></a>
+
+        </div>
+
+      </div>
+
+      <br><br>
+      <!--HighEnd Cameras-->
+      <div id="HECams" style="width:700px;">
+        <h2>High-End Cameras</h2>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <div id="R5" style="width:700px">
+          <a style="color:white; font-size:22px;"
+            href="https://www.usa.canon.com/shop/p/eos-r5-mark-ii">
+            <h3>Canon EOS R5 Mark II</h3>
+          </a>
+
+          <p>
+            <img src="/images/canonr5.png" alt="Picture of Canon R5 Mark 2" style="float:right; width:150px; margin:0;">
+           This Mirrorless DSLR camera allows users to film 4k video up to 23fps, 1080p 60fps, or 720p 120fps which allows for slow motion.
+           The image quality on this camera is superb, but it's built in audio is somewhat lacking. This camera was designed with an exterior microphone in mind.
+           This camera is also compatible with many different lenses allowing for more diverse shots.
+          </p>
+          <br>
+          <p><b>Camera Quality: </b>10/10</p>
+          <p><b>Audio Quality: </b>6/10</p>
+          <p><b>Skill Level: </b>Intermediate-Pro</p>
+          <p><b>Price: </b>$4,000</p>
+          <p><b>Usecase: </b>Professional Photography/Video </p>
+
+          <a href="https://www.youtube.com/watch?v=nPW6bpwEytc&ab_channel=JohnGreengoPhotography-%231photographyeducator" style="color:white;"><b>Tutorial/Tips</b></a>
+
+        </div>
+
+        <div id="XF605" style="width:700px">
+          <a style="color:white; font-size:22px;"
+            href="https://www.usa.canon.com/shop/p/xf605?color=Black&type=New">
+            <h3>Canon XF605 Camcorder</h3>
+          </a>
+          <hr style="border: 2px solid rgb(255, 255, 255);">
+          <p>
+            <img src="/images/canon605.png" alt="Picture of Canon XF605" style="float:right; width:200px; margin:0;">
+            This product differs from the others because it is strictly a camcorder. Camcorders specialize in video, offering things like better audio and better zoom.
+            This product films in 13.4MP with a 1" 4K UHD sensor. A device like this would be common place on your average film set. With USB, HDMI, ethernet, headphone, and microphone input
+            the Canon XF605 offers a variety of ways to interface and export the footage filmed. It's important to remember that this is a camcorder, not a camera, so it lacks the ability to take photos.
+          </p>
+          <br>
+          <p><b>Camera Quality: </b>10/10</p>
+          <p><b>Audio Quality: </b>8/10</p>
+          <p><b>Skill Level: </b>Pro</p>
+          <p><b>Price: </b>$4,000</p>
+          <p><b>Usecase: </b>Professional/Studio Video </p>
+
+          <a href="https://www.youtube.com/watch?v=NTy7qes7TTw&ab_channel=MikeandCameras" style="color:white;"><b>Tutorial/Tips</b></a>
+
+        </div>
 
 
+      </div>
+    </div>
   </div>
+
+  <footer>
+    <p>&copy; Daniel Schaeffer</p>
+
+  </footer>
+
 
 </body>
 <style>
-  #content {
-    margin-left: 170px;
-    color: white;
-  }
-
-  #content>p {
+  #products p {
     margin-top: 0%;
-    margin-bottom: 0%;
-    margin-left: 10px;
+    margin-bottom: 0%
   }
 
+  .sidebar {
+    height:525%; 
+  }
+
+  @media (max-width: 600px) {
+    .sidebar {
+      display: none;
+    }
+
+    #content {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width:1053px) {
+    #sidetext {
+      padding-top: 60px;
+    }
+
+    #content {
+      padding-top: 75px;
+    }
+  }
+
+  h3{
+    
+  }
   h2 {
     margin-bottom: 0%;
+    text-shadow: 0px 0px 15px black;
   }
 
   h1 {

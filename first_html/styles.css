@@ -8,7 +8,8 @@
     width: 100%;
     border: 3px solid #f2f2f2;
     box-shadow: 0px 10px 200px black;
-   
+    position:fixed;
+    z-index: 3;
 }
 
 .navbar a {
@@ -28,8 +29,12 @@
 
 body{
     background-color: rgb(61, 60, 60);
-    margin-bottom: 45px;
+    margin-bottom: 55px;
+    
+    overflow-x: hidden;
 }
+
+
 
 h1 {
     text-align: center;
@@ -62,24 +67,72 @@ dt{
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 45px;
+}
+
+#content{
+  padding-top: 45px;
+}
+
+.cards {
+  margin-left:5%;
 }
 
 .sidebar {
-    height: 90%; 
+    height:700%; 
     width: 160px; 
-    position: fixed;
-    z-index: 1; 
-    top: 10; 
+    position: absolute;
+    z-index: 2; 
+    top: 5%; 
     left: 2;
     background-color: #606060;
     overflow-x: hidden; 
-    padding-top: 20px;
   }
 
   #sidetext {
     color: white;
     padding-left: 10px;
+    position: fixed;
+    padding-top:30px;
   }
+  
+  #sidelink{
+    color:white;
+    text-decoration: none;
+  }
+
+  #sidelink:hover{
+    text-decoration: underline;
+  }
+
+  .card{
+   margin-top: 10%;
+   background-color: #f51511;
+   box-shadow: 0px 5px 20px rgb(27, 26, 26);
+   color: white;
+  }
+
+  .btn-primary{
+    color: black;
+    background-color: white;
+  }
+
+  .btn-primary :hover :focus{
+    color: white;
+    background-color: black;
+  }
+  #content {
+    margin-left: 170px;
+    color: white;
+  }
+
+  #content>p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 10px;
+  }
+
+
 
   img{
     display: block;
@@ -89,8 +142,13 @@ dt{
     object-fit:cover;
   }
 
-  #sidelink:hover{
-    text-decoration: underline;
+
+ 
+
+  td,th{
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
   }
 
   footer {

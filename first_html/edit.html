@@ -1,21 +1,226 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
-      </head>
-      <body>
-        <div class="navbar">
-            <a id="logo" class="active" href="index.html">Home</a>
-            <a id="navtext" href="camera.html">Camera</a>
-            <a id="navtext" href="mics.html">Microphone</a>
-            <a id="navtext" href="computer.html">Computers</a>
-            <a id="navtext" href="music.html">Music</a>
-            <a id="navtext" href="edit.html">Editting</a>
-            <a id="navtext" href="peripheral.html">Peripherals</a>
-          </div>
+<!--DEVELOPER: Daniel Schaeffer, IS117-002 Spring 2025-->
+<head>
 
-        <h1>Editing</h1>
-    </body>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a id="logo" class="active" href="index.html">Home</a>
+    <a id="navtext" href="camera.html">Camera</a>
+    <a id="navtext" href="mics.html">Microphone</a>
+    <a id="navtext" href="computer.html">Computers</a>
+    <a id="navtext" href="music.html">Music</a>
+    <a id="navtext" href="edit.html">Editing</a>
+    <a id="navtext" href="peripheral.html">Peripherals</a>
+    <a id="navtext" href="contact.html">Contact</a>
+  </div>
+
+  <div class="sidebar">
+    <div id="sidetext">
+      <h3>Editing</h3>
+      <a id="sidelink" href="#content">Info</a> <br> <br>
+      <a id="sidelink" href="#phot" style="font-size: 22px;">Photo</a> <br>
+      <a id="sidelink" href="#vid" style="font-size: 22px;">Video</a> <br>
+
+    </div>
+  </div>
+
+  <div id="content" style="width:800px;">
+    <h1>Editing</h1>
+
+    <h2>Useful Information</h2>
+    <p>
+      When creating content what you see is often not the raw files recorded. Everything gets edited from photos, to
+      videos, to audio.
+      We've already covered a bit about audio editing on our <a href="music.html" style="color:white;">Music</a> page.
+      <b id="phot"></b>Below we will cover some good programs used for editing photos and videos.
+    </p>
+    <br>
+    <div id="photos">
+      <h2>Photo Editing</h2>
+      <hr style="border: 2px solid rgb(255, 255, 255);">
+
+      <div id="photoshop">
+        <a style="color:white; font-size:22px;"
+          href="https://www.adobe.com/products/photoshop/landpa.html?sdid=NC5FRF5H&mv=search&mv2=paidsearch&ef_id=Cj0KCQjwt8zABhDKARIsAHXuD7ZttaFx_2as-XyX4h4jtsmyLQD1IeKSglBXUfkoTP6Ty1JPrZBX8KAaApanEALw_wcB:G:s&s_kwcid=AL!3085!3!714745362176!e!!g!!photoshop!1712238394!67643541820&mv=search&gad_source=1&gbraid=0AAAAAD5r4AxWdlUqeU6nCfzO8fXFwzMoX&gclid=Cj0KCQjwt8zABhDKARIsAHXuD7ZttaFx_2as-XyX4h4jtsmyLQD1IeKSglBXUfkoTP6Ty1JPrZBX8KAaApanEALw_wcB">
+          <h3>Adobe Photoshop</h3>
+        </a>
+        <p>
+          <img src="/images/photoshop.png" alt="Photo of Photoshop Logo" style="float:right; width:150px; margin:0;">
+          Photoshop is THE photo editing app. Photoshop is used for advanced photo editing, digital art, graphic desgin,
+          and really anything visual you can think of.
+          Photoshop is the industry standard for professional photo and design work. The learning curve can seem
+          intimidating, but once mastered Photoshop is an incredibly powerful tool.
+          A monthly charge may seem daunting, but there's also a bundle deal with all Adobe apps for $35.99/mo.
+        </p>
+        <p style="font-size: 22px;"><b style="font-size: 24px;">Price: </b>$22.99/mo</p>
+
+      </div>
+      <div id="lightroom">
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <a style="color:white; font-size:22px;"
+          href="https://www.adobe.com/products/photoshop-lightroom/campaign/pricing.html?sdid=BDDS3CR2&mv=search&mv2=paidsearch&ef_id=Cj0KCQjwoNzABhDbARIsALfY8VMSV18R2Lv1sO1j50E0ABqwvpgzvnVGswVL1cUl3O-Rn-fCKXPjDGEaAscSEALw_wcB:G:s&s_kwcid=AL!3085!3!677050899114!e!!g!!lightroom!1712238382!67643557900&mv=search&gad_source=1&gbraid=0AAAAAD5r4AwMvi8r0t7_xEKwxEMq67WwU&gclid=Cj0KCQjwoNzABhDbARIsALfY8VMSV18R2Lv1sO1j50E0ABqwvpgzvnVGswVL1cUl3O-Rn-fCKXPjDGEaAscSEALw_wcB">
+          <h3>Adobe Lightroom</h3>
+        </a>
+        <p>
+          <img src="/images/lightroom.png" alt="Photo of Lightroom Logo" style="float:right; width:150px; margin:0;">
+          Lightroom is used for organizing and editing large batches of photos. Lightroom is especially useful for
+          photographers. Lightroom allows for non-destructive editing, so things like color correction, exposure,
+          cropping, and more are easily done in light room.
+          Lightroom allows users to edit many photos with a consistent style. A monthly charge may seem daunting, but
+          there's also a bundle deal with all Adobe apps for $35.99/mo.
+        </p>
+        <p style="font-size: 22px;"><b style="font-size: 24px;">Price: </b>$11.99/mo</p>
+
+      </div>
+      <div id="gimp">
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <a style="color:white; font-size:22px;"
+          href="https://www.gimp.org/downloads/">
+          <h3>GIMP</h3>
+        </a>
+        <p>
+          <img src="/images/gimp.png" alt="Photo of GIMP Logo" style="float:right; width:150px; margin:0;">
+          GIMP is a customizable, open source photo editing software. GIMP is meant to be an alternative to Photoshop
+          however it doesn't do some things as good. GIMPs UI is a bit outdated, it can also lag with large files.
+          GIMP has its limitations meaning that it isn't really seen in professional work, but it is a great entry point
+          for users new to photo editing.
+        </p>
+        <p style="font-size: 22px;"><b style="font-size: 24px;" id="vid">Price: </b>Free</p>
+      </div>
+    </div>
+
+    <br>
+
+    <div id="videos">
+      <h2>Video Editing</h2>
+
+      <div id="premier">
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <a style="color:white; font-size:22px;"
+          href="https://www.adobe.com/products/premiere/campaign/pricing.html?sdid=SYBNLTYL&mv=search&mv2=paidsearch&ef_id=Cj0KCQjwt8zABhDKARIsAHXuD7aZrAZwimMTZkF5Pe3FvywzdXM4KdQsH2eTJkPFiQGHOUjpjhUOQn0aAlDYEALw_wcB:G:s&s_kwcid=AL!3085!3!717306460795!e!!g!!adobe%20premiere!1712852043!83993219448&mv=search&gad_source=1&gbraid=0AAAAAD5r4AxdifLfXUHefmXLLF81avhSx&gclid=Cj0KCQjwt8zABhDKARIsAHXuD7aZrAZwimMTZkF5Pe3FvywzdXM4KdQsH2eTJkPFiQGHOUjpjhUOQn0aAlDYEALw_wcB">
+          <h3>Adobe Premiere Pro</h3>
+        </a>
+        <p>
+          <img src="/images/premiere.png" alt="Photo of Adobe Premiere Logo"
+            style="float:right; width:150px; margin:0;">
+          Adobe Premiere Pro is one of the most famous and widely used editing software. Premiere is fairly advanced
+          meaning the learning curve can be pretty steep. Premier is widely used among professionals for its 4K,6K,8K+
+          capability and it's integration with Photoshop and After Effects.
+        </p>
+        <p style="font-size: 22px;"><b style="font-size: 24px;">Price: </b>$22.99/mo</p>
+
+      </div>
+
+      <div id="aftereffects">
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <a style="color:white; font-size:22px;" href="https://www.adobe.com/products/aftereffects.html#modal-hash">
+          <h3>Adobe After Effects</h3>
+        </a>
+        <p>
+          <img src="/images/aftereffects.png" alt="Photo of Adobe After Effects Logo"
+            style="float:right; width:150px; margin:0;">
+          Adobe After Effects is best known for its motion graphics and visual effects. Things like animations, effects,
+          and compositing are available with After Effects. After Effects is extremely complex meaning it's mainly only
+          used by professionals.
+        </p>
+        <br>
+        <p style="font-size: 22px;"><b style="font-size: 24px;">Price: </b>$22.99/mo</p>
+
+      </div>
+
+      <div id="vegas">
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <a style="color:white; font-size:22px;" href="https://www.vegascreativesoftware.com/us/vegas-pro/">
+          <h3>Vegas Pro</h3>
+        </a>
+        <p>
+          <img src="/images/vegas.png" alt="Photo of Vegas Pro Logo" style="float:right; width:150px; margin:0;">
+          Vegas Pro is a professional grade editing software. Vegas Pro is a good alternative to Premiere Pro especially
+          for independent creators. Many people prefer Vegas Pro because it offers a one-time-purchase license as well
+          as a monthly license.
+        </p>
+        <br>
+        <p style="font-size: 22px;"><b style="font-size: 24px;">Price: </b>$19.99/mo or $179.00</p>
+
+      </div>
+    </div>
+
+    <div id="davinci">
+      <hr style="border: 2px solid rgb(255, 255, 255);">
+      <a style="color:white; font-size:22px;" href="https://www.blackmagicdesign.com/products/davinciresolve">
+        <h3>DaVinci Resolve</h3>
+      </a>
+      <p>
+        <img src="/images/davinci.png" alt="Photo of DaVinci Resolve Logo" style="float:right; width:150px; margin:0;">
+        DaVinci Resolve is a powerful video editing software that offers best-in-class color grading, VFX, and rendering
+        all in one app. The downsides of DaVinci Resolve are the steep learning curve, heavy system usage, advance features locked behind paywall.
+        There is a $295 Studio version, but the free version still offers many advanced features.
+      </p>
+      <p style="font-size: 22px;"><b style="font-size: 24px;">Price: </b>Free</p>
+
+    </div>
+
+
+  </div>
+
+
+  </div>
+<br>
+<footer>
+  <p>&copy; Daniel Schaeffer 2025 <a href="https://themes.getbootstrap.com/terms/">ToS</a> <a href="https://bootstrap.com.sg/privacy-policy/">Privacy</a></p>
+
+</footer>
+</body>
+<style>
+  b {
+    font-size: 20px;
+  }
+
+  #products p {
+    margin-top: 0%;
+    margin-bottom: 0%
+  }
+
+  .sidebar {
+    height: 300%;
+  }
+
+  @media (max-width: 600px) {
+    .sidebar {
+      display: none;
+    }
+
+    #content {
+      margin-left: 1%;
+    }
+  }
+
+  @media (max-width:1053px) {
+    #sidetext {
+      padding-top: 60px;
+    }
+
+    #content {
+      padding-top: 75px;
+    }
+  }
+
+
+  h2 {
+    margin-bottom: 0%;
+    text-shadow: 0px 0px 15px black;
+  }
+
+  h1 {
+    text-align: left;
+    text-shadow: -2px 5px 15px black;
+  }
+</style>
+
 </html>

@@ -1,21 +1,363 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
-      </head>
-      <body>
-        <div class="navbar">
-            <a id="logo" class="active" href="index.html">Home</a>
-            <a id="navtext" href="camera.html">Camera</a>
-            <a id="navtext" href="mics.html">Microphone</a>
-            <a id="navtext" href="computer.html">Computers</a>
-            <a id="navtext" href="music.html">Music</a>
-            <a id="navtext" href="edit.html">Editting</a>
-            <a id="navtext" href="peripheral.html">Peripherals</a>
-          </div>
+<!--DEVELOPER: Daniel Schaeffer, IS117-002 Spring 2025-->
+<head>
 
-        <h1>Computers</h1>
-    </body>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a id="logo" class="active" href="index.html">Home</a>
+    <a id="navtext" href="camera.html">Camera</a>
+    <a id="navtext" href="mics.html">Microphone</a>
+    <a id="navtext" href="computer.html">Computers</a>
+    <a id="navtext" href="music.html">Music</a>
+    <a id="navtext" href="edit.html">Editing</a>
+    <a id="navtext" href="peripheral.html">Peripherals</a>
+    <a id="navtext" href="contact.html">Contact</a>
+  </div>
+
+  <div class="sidebar">
+    <div id="sidetext">
+      <h3>Computer</h3>
+      <a id="sidelink" href="#content">Info</a> <br>
+      <a id="sidelink" href="#part">Parts</a> <br> <br>
+      <a id="sidelink" href="#products" style="font-size: 22px;">Products</a> <br>
+      <a id="sidelink" href="#lap">Laptops</a> <br>
+      <a id="sidelink" href="#pcs">PCs</a> <br>
+
+    </div>
+  </div>
+
+  <div id="content">
+    <h1>Computers</h1>
+    <div id="info" style="width:800px;">
+      <h2>Useful Information</h2>
+      <hr style="border: 2px solid rgb(255, 255, 255);">
+      <p>
+        When purchasing a computer the first step is identifying what you'll use the computer for. Things like writing
+        or coding don't require things like a GPU
+        while things like gaming or video editing almost require a GPU. One must also decide if they'll buy a laptop or
+        a PC, if they decide to buy a PC
+        they must also decide if they're going to build their PC or buy one pre-built. Pre-built computers are often
+        more expensive but provide an out of the box experience.
+        Custom PCs are often cheaper and more upgradable, but building a PC can be rather difficult for some. Either way
+        it's important to know the important parts of a computer so you know what to look for when shopping.
+      </p>
+      <br>
+      <p>
+        The most important components for a computer when looking at content creation are a good to decent CPU, a
+        dedicated GPU, and lots of storage.<b id="part"></b>
+      </p>
+      <br>
+    </div>
+
+
+    <div id="parts" style="width:800px;">
+      <h2>Parts of a PC</h2>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'cpu')">CPU</button>
+        <button class="tablinks" onclick="openTab(event, 'gpu')">GPU</button>
+        <button class="tablinks" onclick="openTab(event, 'ram')">RAM</button>
+        <button class="tablinks" onclick="openTab(event, 'storage')">Storage</button>
+        <button class="tablinks" onclick="openTab(event, 'motherBoard')">Mother Board</button>
+        <button class="tablinks" onclick="openTab(event, 'psu')">Power Supply</button>
+        <button class="tablinks" onclick="openTab(event, 'IO')">I/O</button>
+      </div>
+
+      <div id="cpu" class="tabcontent">
+        <h3>CPU</h3>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <p>
+          <img src="/images/cpu.png" alt="Photo of Intel CPU" style="float:right; width:150px; margin:0;">
+          A Central Processing Unit or CPU is essentially the brain of your computer. On a basic level a CPU runs the
+          calculations and processes for your computer.
+          A faster CPU means a faster PC, a faster PC means less frustration. It also means faster task completion,
+          improved multitasking,
+          smoother gaming, and editing. <b>The measures of a good CPU lie in it's clock speed and core count.</b>
+        </p>
+        <p>The most popular brands are Intel and the AMD Ryzen series.</p>
+      </div>
+      <div id="gpu" class="tabcontent">
+        <h3>GPU</h3>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <p>
+          <img src="/images/rtx3080.png" alt="Photo of Geforce RTX 3080" style="float:right; width:200px; margin:0;">
+          Your GPU or Graphics Processing Unit is what's responsible for rendering images and videos. GPUs are essential
+          for
+          things like gaming and video editing. When editing photos or videos a bad GPU can lead to slow rendering,
+          laggy previews, and crashes.
+          When gaming a bad GPU will lead to lower frames per second, reduced graphics quality, longer loading times,
+          overheating, and crashes.
+          <b>A good graphics card is measured by its core count, clock speed, large and fast VRAM.</b>
+        </p>
+        <p>
+          The most popular brands are NVIDIA with their GTX and RTX series, and AMD for their Radeon RX series.
+        </p>
+      </div>
+      <div id="ram" class="tabcontent">
+        <h3>RAM</h3>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <p>
+          <img src="/images/ram.png" alt="Photo of Crucial RAM stick" style="float:right; width:150px; margin:0;">
+          RAM or Random Access Memory is temporary memory that stores data and programs for quick access. More RAM will
+          help you when editing by providing
+          faster previews, better multitasking, and fewer crashes. More RAM will also provide smoother gaming, shorter
+          load times, and will cause less studdering when running background softwares.
+          There are a lot of good brands when looking for RAM, 2 reliable retailers are Kingston and Corsair.<b> We
+            would recommed you get no less than 16GB of RAM, 32GB is ideal when editing with lots of effects.</b>
+        </p>
+      </div>
+
+      <div id="storage" class="tabcontent">
+        <h3>Storage</h3>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <p>
+          <img src="/images/harddrive.png" alt="Photo of Hard Drive" style="float:right; width:150px; margin:0;">
+          Your long term storage is where data, programs, and your operating system will reside. There are 2 types of
+          long term storage: a <b>Hard Drive</b> and an <b>SSD</b>. The difference between these 2 is speed.
+          An SSD is much faster but often more expensive or with less storage. Hard Drives are usually cheaper and offer
+          much more storage. If it's within your budget we would recommend having both an SSD and a Hard Drive.
+          <b>We'd recommend getting atleast 1TB worth of storage</b>. You can also get an external hard drive for things
+          like footage.
+        </p>
+      </div>
+      <div id="motherBoard" class="tabcontent">
+        <h3>Mother Board</h3>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <p>
+          <img src="/images/motherboard.png" alt="Photo of a motherboard" style="float:right; width:150px; margin:0;">
+          If a CPU is the brain of a PC, then a motherboard is the spine. The motherboard is what connects every
+          component of the PC together.
+          Without a motherboard you would simply have a bunch of computer parts with no use. <b>The most important thing
+            when looking at a motherboard is it's compatibility
+            with the parts you intend to use.</b> Things like the CPU socket, RAM support, GPU slots, and I/O ports are
+          important to check before commiting to a motherboard.
+          We recommend selecting your motherboard last so you know what connection types you require.
+        </p>
+      </div>
+      <div id="psu" class="tabcontent">
+        <h3>Power Supply Unit</h3>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <p>
+          <img src="/images/powersupply.png" alt="Photo of power supply" style="float:right; width:150px; margin:0;">
+          A Power Supply or PSU is what gives your computer power. Without a power supply there's no way to plug your
+          computer in. It's important to check that your power supply will be able to power
+          all the components of your PC. <b>We would recommend getting no less than 650W</b>, a higher end PC would need
+          750W-1000W.
+        </p>
+      </div>
+      <div id="IO" class="tabcontent">
+        <h3>Input/Output</h3>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <p>
+          <img src="/images/monitor.png" alt="Photo of Samsung monitor" style="float:right; width:150px; margin:0;">
+          Your I/O would be things that plug into your computer. Input would be things like a mouse and keyboard. Output
+          would be things like a monitor and headphones.
+          These are not that important as they are easily upgradeable. While they don't determine the performance of
+          your computer, they may limit your computers potential.
+          For example, if you have the ability to play games at high frames, but if your monitor has a low refresh rate
+          you won't be able to access those high frames.
+        </p>
+      </div>
+
+    </div>
+<b id="lap"></b>
+    <br>
+    <div id="laptop" style="width:800px;">
+      <h2>Laptops</h2>
+      <p>
+        A laptop and a PC are very similar, the main difference is that a PC is usually more powerful than laptops of
+        the same price. Laptops offer a portable option for creators on the go.
+        Below are some options for decent laptops at different price points. Make sure any product fits your needs
+        before purchasing.
+      </p>
+      <hr style="border: 2px solid rgb(255, 255, 255);">
+
+      <div id="hp17">
+        <a style="color:white; font-size:22px;"
+          href="https://www.hp.com/us-en/shop/pdp/hp-laptop-17-cp3047nr?s_kwcid=AL!20144!3!!!!x!!&jumpid=cs_con_nc_ns&utm_medium=cs&utm_source=ga&utm_campaign=HP-Store_US_All_CPS_All_AMD_Google_All_Smart-PLA&utm_content=sp&adid=&addisttype=xpla&7F1Z5UA%23ABA&cq_src=google_ads&cq_cmp=20532148701&cq_con=&cq_term=&cq_med=pla&cq_plac=&cq_net=x&cq_pos=&cq_plt=gp&gad_source=1&gbraid=0AAAAAD-ppXhbnMyoLA_UD3f_poV_PNz4P&gclid=Cj0KCQjwzrzABhD8ARIsANlSWNN6h6dvv6Q36yNXmXHUYtXTwA21Y3gR0dk3CFOK-YklHPWcUDUOgIMaAnubEALw_wcB&gclsrc=aw.ds">
+          <h3>HP Laptop 17</h3>
+        </a>
+        <ul style="font-size: 20px;">
+          <img src="/images/hp17.png" alt="Photo of HP Laptop 17" style="float:right; width:250px; margin:0;">
+          <li><b>CPU: </b>AMD Ryzen 7</li>
+          <li><b>GPU: </b>Integrated</li>
+          <li><b>RAM: </b>16GB DDR4</li>
+          <li><b>Storage: </b>512GB SSD</li>
+          <li><b>Operating System: </b>Windows 11</li>
+          <li><b>Size: </b>17.3"</li>
+          <li><b>Price: </b>$550</li>
+        </ul>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+      </div>
+
+      <div id="g15">
+        <a style="color:white; font-size:22px;"
+          href="https://www.dell.com/en-us/shop/cty/pdp/spd/g-series-15-5530-laptop/useghbto5530gzxl?tfcid=91049735&&gacd=9684992-1104-5761040-266906002-0&dgc=ST&SA360CID=71700000109860340&gad_source=1&gbraid=0AAAAADllXQdYxKa01iNIW_Na8nn4uaFyU&gclid=Cj0KCQjwzrzABhD8ARIsANlSWNO9EQZpnv1wzK-uV1xeDc_el3kxAhvGkZjHHxqC7ljnuPhlI0jhCD8aAvkSEALw_wcB&gclsrc=aw.ds">
+          <h3>Dell G15 Gaming Laptop</h3>
+        </a>
+        <ul style="font-size: 20px;">
+          <img src="/images/g15.png" alt="Photo of Dell G15 Gaming Laptop" style="float:right; width:250px; margin:0;">
+          <li><b>CPU: </b>Intel Core i5 (10 cores, 4.5GHz)</li>
+          <li><b>GPU: </b>NVIDIA GeForce RTX 3050, 6GB GDDR6</li>
+          <li><b>RAM: </b>8GB DDR5</li>
+          <li><b>Storage: </b>512GB SSD</li>
+          <li><b>Operating System: </b>Windows 11</li>
+          <li><b>Size: </b>15"</li>
+          <li><b>Price: </b>$900</li>
+        </ul>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+      </div>
+
+      <div id="m16">
+        <a style="color:white; font-size:22px;"
+          href="https://www.dell.com/en-us/shop/cty/pdp/spd/alienware-m16-r2-laptop/useashbtsm16r2gypv?tfcid=91049735&&gacd=9684992-1104-5761040-266906002-0&dgc=ST&SA360CID=71700000109860301&gad_source=1&gbraid=0AAAAADllXQctxzsHsdlDwKv8JrM77Kkqy&gclid=Cj0KCQjwzrzABhD8ARIsANlSWNM6ePyzlWgz1LizVfqSTN5wGdM892NlL9N0GJtnnqqUxFUCqce6xN0aAp4REALw_wcB&gclsrc=aw.ds">
+          <h3>Alienware M16 Gaming Laptop</h3>
+        </a>
+        <ul style="font-size: 20px;">
+          <img src="/images/awm16.png" alt="Photo of Alienware M16 Gaming Laptop"
+            style="float:right; width:250px; margin:0;">
+          <li><b>CPU: </b>Intel Core Ultra 9 (16 cores, 5.1GHz)</li>
+          <li><b>GPU: </b>NVIDIA GeForce RTX 4060, 8GB GDDR6</li>
+          <li><b>RAM: </b>32GB DDR5</li>
+          <li><b>Storage: </b>1TB SSD</li>
+          <li><b>Operating System: </b>Windows 11</li>
+          <li><b>Size: </b>16"</li>
+          <li><b>Price: </b>$1,900</li>
+        </ul>
+        <hr style="border: 2px solid rgb(255, 255, 255);" id="pcs">
+      </div>
+    </div>
+
+    <br>
+    <div id="pc" style="width:800px;">
+      <h2>PCs</h2>
+      <p>PCs are the more powerful option between the 2. While we recommened our users to build their own PC,
+        we've listed a couple possible options for prebuilt PCs. Most prebuilt PCs have options to customize components.
+      </p>
+      <hr style="border: 2px solid rgb(255, 255, 255);">
+
+      <div id="omen35">
+        <a style="color:white; font-size:22px;" href="https://www.hp.com/us-en/shop/pdp/omen-35l-gaming-desktop-pc-9x560av-1?s_kwcid=AL!20144!3!!!!x!!&jumpid=cs_con_nc_ns&utm_medium=cs&utm_source=ga&utm_campaign=HP-Store_US_All_PS_All_Hgm_AMD_Google_All_Smart-PLA_Gaming_Bestseller&utm_content=sp&adid=&addisttype=xpla&9X560AV_1&cq_src=google_ads&cq_cmp=20541871360&cq_con=&cq_term=&cq_med=pla&cq_plac=&cq_net=x&cq_pos=&cq_plt=gp&gad_source=1&gbraid=0AAAAAD-ppXipcEbkRolJ-yQwSvZNBJCpn&gclid=Cj0KCQjwzrzABhD8ARIsANlSWNPwRwGP_-AghBr-RvzVe-i1o8zjGpLqJLZQGEgd8eX4jf50dSqBkOUaAgyfEALw_wcB&gclsrc=aw.ds">
+          <h3>HP OMEN 35L Gaming Desktop</h3>
+        </a>
+        <ul style="font-size: 20px;">
+          <img src="/images/omen35.png" alt="Photo of HP OMEN 35L Gaming Desktop" style="float:right; width:200px; margin:0;">
+          <li><b>CPU: </b>AMD Ryzen 5 (6 cores, 5.0GHz)</li>
+          <li><b>GPU: </b>AMD Radeon RX 7600 (8GB GDDR6)</li>
+          <li><b>RAM: </b>16GB DDR5</li>
+          <li><b>Storage: </b>512GB SSD</li>
+          <li><b>Operating System: </b>Windows 11</li>
+          <li><b>Price: </b>$1,100</li>
+        </ul>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+      </div>
+
+      <div id="vtg">
+        <a style="color:white; font-size:22px;" href="https://www.newegg.com/vtg-gaming-desktop-geforce-rtx-4060ti-amd-ryzen-7-5700x-32gb-ddr4-1tb-ssd-black/p/3D5-0058-00010?Item=9SIBMARJWP2541&cm_sp=product-_-from-price-options">
+          <h3>VTG Gaming Desktop</h3>
+        </a>
+        <ul style="font-size: 20px;">
+          <img src="/images/vtg.png" alt="Photo of VTG Gaming Desktop" style="float:right; width:150px; margin:0;">
+          <li><b>CPU: </b>AMD Ryzen 7 (8 core, 4.6GHz)</li>
+          <li><b>GPU: </b>NVIDIA RTX 4060Ti</li>
+          <li><b>RAM: </b>32GB DDR4</li>
+          <li><b>Storage: </b>1TB SSD</li>
+          <li><b>Operating System: </b>Windows 11</li>
+          <li><b>Price: </b>$1050</li>
+        </ul>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+      </div>
+
+      <div id="bettergamer">
+        <a style="color:white; font-size:22px;" href="https://www.buildredux.com/products/better-gamer-intel-advanced-intel-core-i7-13700f-nvidia-rtx-5070?variant=51877519655276&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gbraid=0AAAAABzEEkMrzGLkGPYeLvOhiQ6bxHK1j&gclid=Cj0KCQjwzrzABhD8ARIsANlSWNMkIZf-H_0xJu_pUSI1Aoqgj5om0MlYAj_XT7d5Jzp0Q1fOQDA9jMIaAv2XEALw_wcB">
+          <h3>Better Gamer: Intel Advanced</h3>
+        </a>
+        <ul style="font-size: 20px;">
+          <img src="/images/bettergamer.png" alt="Photo of Better Gamer: Intel Advanced" style="float:right; width:150px; margin:0;">
+          <li><b>CPU: </b>AMD Ryzen 7</li>
+          <li><b>GPU: </b>GeForce 5070 (12GB)</li>
+          <li><b>RAM: </b>32GB DDR4</li>
+          <li><b>Storage: </b>1TB SSD</li>
+          <li><b>Operating System: </b>Windows 11</li>
+          <li><b>Price: </b>$2,000</li>
+        </ul>
+        
+      </div>
+      <br>
+
+    </div>
+  </div>
+  <footer>
+    <p>&copy; Daniel Schaeffer 2025 <a href="https://themes.getbootstrap.com/terms/">ToS</a> <a href="https://bootstrap.com.sg/privacy-policy/">Privacy</a></p>
+
+  </footer>
+</body>
+
+<script>
+  function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+
+<style>
+  b {
+    font-size: 20px;
+  }
+
+  #products p {
+    margin-top: 0%;
+    margin-bottom: 0%
+  }
+
+  .sidebar {
+    height: 380%;
+  }
+
+  @media (max-width: 600px) {
+    .sidebar {
+      display: none;
+    }
+
+    #content {
+      margin-left: 1%;
+    }
+  }
+
+  @media (max-width:1053px) {
+    #sidetext {
+      padding-top: 60px;
+    }
+
+    #content {
+      padding-top: 75px;
+    }
+  }
+
+
+  h2 {
+    margin-bottom: 0%;
+    text-shadow: 0px 0px 15px black;
+  }
+
+  h1 {
+    text-align: left;
+    text-shadow: -2px 5px 15px black;
+  }
+</style>
+
 </html>

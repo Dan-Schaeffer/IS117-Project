@@ -1,19 +1,378 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-      </head>
-      <body>
-        <div class="navbar">
-            <a id="logo" class="active" href="homepage.html">Home</a>
-            <a id="navtext" href="camera.html">Camera</a>
-            <a id="navtext" href="mics.html">Microphone</a>
-            <a id="navtext" href="computer.html">Computers</a>
-            <a id="navtext" href="music.html">Music</a>
-            <a id="navtext" href="edit.html">Editting</a>
-            <a id="navtext" href="peripheral.html">Peripherals</a>
-          </div>
+<!--DEVELOPER: Daniel Schaeffer, IS117-002 Spring 2025-->
+<head>
 
-        <h1>Microphones</h1>
-    </body>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a id="logo" class="active" href="index.html">Home</a>
+    <a id="navtext" href="camera.html">Camera</a>
+    <a id="navtext" href="mics.html">Microphone</a>
+    <a id="navtext" href="computer.html">Computers</a>
+    <a id="navtext" href="music.html">Music</a>
+    <a id="navtext" href="edit.html">Editing</a>
+    <a id="navtext" href="peripheral.html">Peripherals</a>
+    <a id="navtext" href="contact.html">Contact</a>
+  </div>
+
+  <div class="sidebar">
+    <div id="sidetext">
+      <h3>Mics</h3>
+      <a id="sidelink" href="#info">Info</a> <br>
+      <a id="sidelink" href="#micTypes">Mic Types</a> <br> <br>
+      <a id="sidelink" href="#products" style="font-size: 22px;">Products</a> <br>
+      <a id="sidelink" href="#dyn">Dynamic</a> <br>
+      <a id="sidelink" href="#cond">Condenser</a> <br>
+      <a id="sidelink" href="#shot">Shotgun</a> <br>
+      <a id="sidelink" href="#lav">Lavalier</a> <br>
+    </div>
+  </div>
+
+  <div id="content" style="width:60%;">
+    <h1 id="info">Microphones</h1>
+    <div >
+      <h2>Useful Information</h2>
+      <hr style="border: 2px solid rgb(255, 255, 255);">
+      <p>
+        When buying a microphone it's important to remember what and where you'll be using it. The 3 types of devices
+        commonly used with microphones
+        are computers, phones, and cameras. Before buying a microphone it's important to check if it's compatible with
+        your device, if it will suit your needs/environment, and if it requires
+        an additional power source. Most mics that use a standard audio jack or USB allow them to be used with phones using an adapter.The 4 types of microphones we'll cover are <b id="micTypes">Dynamic, Condenser,
+          Shotgun, and
+          Lavalier</b>.
+      </p>
+      <br>
+      <h2>Microphone Types</h2>
+
+      <hr style="border: 2px solid rgb(255, 255, 255);">
+      <p>
+        <b>Dynamic</b> microphones are rugged and durable, meaning they are harder to blowout and harder to break via
+        dropping.
+        They are good for recording live vocals and instruments, they specialize with loud sounds such as a live
+        concert. Since they specialize with loud sounds, to record a normal speaking level, the speaker would have to be
+        very close to the mic.
+      </p>
+      <p>
+        <b>Condenser</b> microphones are usually more powerful, meaning high end condenser mics require power sources.
+        Condenser mics also specialize with crisp recording of vocals and instruments, but it doesn't handle loud sounds
+        as well as a dynamic mic. This means that condenser mics are better for studio recordings. Famous artists like
+        The Beatles and Frank Sinatra
+        used condenser mics when recording in their studios.
+      </p>
+      <p>
+        <b>Shotgun</b> microphones are a type of condenser mic, but they are highly directional. This means shotgun mics
+        record sound from wherever they're pointed and attempt to cancel any noise from outside of their scope. Shotgun
+        mics have excellent background noise reduction. Shotgun mics are also used as boom mics.
+      </p>
+      <p>
+        <b>Lavalier</b> or <b>Lapel</b> mics are small mics that can be attatched to the subject (usually clipped
+        to clothes). Lavalier or Lav mics can be wired or wireless
+        but they're used for whenever the subject of the video is mobile.<b id="products"></b>
+      </p>
+    </div>
+    <br>
+    <div id="shop">
+      <h2>Products</h2>
+      <p>
+        Since microphones are mostly plug and play, there won't be any tutorial links. Audio tests for microphones
+        are available online, but they are often hidden in a long form video. We encourage users to do their own
+        research aswell. Also rather than organize
+        these products from low to high end, we've divided them into the types of microphones listed from low to high.<b id="dyn"></b>
+      </p>
+      <br >
+      <div id="dynamics">
+        <h2>Dynamic Mics</h2>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+
+        <div id="k688">
+          <a style="color:white; font-size:22px;"
+            href="https://www.amazon.com/FIFINE-Microphone-Voice-Over-Windscreen-Amplitank-K688/dp/B0B8SNVK5K?crid=Y59FE9BKRHNT&dib=eyJ2IjoiMSJ9.DrH8tVgL6eQXdKBW04qRxYWGSYj8VTd-WxdwpqbFxQFZWCJ6TTSZjwXJhZt4ycsvRK56iWT1idV0c1b4hFfeJISd9sgjQXZLWbKQFhIN-97x1u64NJ-Ilr3vTt4TILyO5Edjzx-4x02C4q6in54PgKah3PYKCcGTE_6eOGXxR-g_r1IhgyYY41Hhb9QuEkEthYk-NePytelSzVv3PCa-06-HnoGvWnJXEUJek7HzYCur1QgW5QMWdmgq5CwsqOKV6hwhQpmaFqgrZ4F4U2c0nfzz4U19K9CFSHnrXD3s8sM.122WZKnTUhiIMXcChCnV-28tOWGu1Lcv_Px-oPObhzU&dib_tag=se&keywords=fifine%2Bk688&qid=1727008812&sprefix=fififne%2Bk68%2Caps%2C187&sr=8-5&th=1&linkCode=sl1&tag=herovibes-20&linkId=1fc46cb9a8d99716a1a47a82dda7d2f9&language=en_US&ref_=as_li_ss_tl">
+            <h3>FIFINE K688</h3>
+          </a>
+          <p>
+            <img src="/images/fifinek688.png" alt="Photo of FIFINE K688 Microphone"
+              style="float:right; width:150px; margin:0;">
+            This microphone is a good budget option. It is dynamic which means it's better for loud sounds or for
+            keeping out background noise.
+            While you would have to be close to the microphone for things like vlogs or podcast, you'd need not worry
+            when recording things like instruments (especially drums).
+          </p>
+          <p><b>Price: </b>$50</p>
+        </div>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+
+
+        <div id="MV7X">
+          <a style="color:white; font-size:22px;"
+            href="https://www.amazon.com/Shure-MV7X-Podcast-Microphone-Voice-Isolating/dp/B09BZZCGC8?th=1">
+            <h3>Shure MV7X</h3>
+          </a>
+          <p>
+            <img src="/images/shureMV7X.png" alt="Photo of Shure MV7X Microphone"
+              style="float:right; width:150px; margin:0;">
+            This microphone is our mid-range dynamic mic. The version we have here is the XLR-only version which means
+            this mic
+            uses an XLR cord which does NOT come with the mic. It also means that we'd need some sort of external audio
+            interface.
+            There are other versions of this mic with USB connections but they're both more expensive and lower quality
+            (XLR is higher quality than USB). This version of
+            the mic also doesn't come with a stand. That being said if this isn't the last mic you intend to buy, an XLR
+            cable and audio interface may be things you want to get regardless.
+            While the USB options are more expensive, they're also more convient and for things like streaming it would
+            be good enough quality.
+          </p>
+          <p><b>Price: </b>$180 (XLR version; doesn't include cost of cord, interface, or stand)</p>
+
+        </div>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+        <div id="SM7B">
+          <a style="color:white; font-size:22px;"
+            href="https://www.amazon.com/Shure-MV7X-Podcast-Microphone-Voice-Isolating/dp/B09BZZCGC8?th=1">
+            <h3>Shure SM7B</h3>
+          </a>
+          <p>
+            <img src="/images/shuresm7b.png" alt="Photo of Shure SM7B Microphone"
+              style="float:right; width:150px; margin:0;">
+            This is easily the most famous podcast microphone. The biggest issue with this microphone is that it
+            requires a "preamp" or a high-end audio interface.
+            A preamps could range from $50 to $2000 however, they do sell a $500 version called the SM7dB that comes
+            with a built in preamp.
+          </p>
+          <p id="cond"><b>Price: </b>$400 (doesn't include preamp)</p>
+
+        </div>
+
+      </div>
+      <br>
+      <div id="condensers">
+        <h2>Condenser Microphones</h2>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+
+        <div id="meteor">
+          <a style="color:white; font-size:22px;"
+            href="https://www.amazon.com/Samso-Condenser-Podcasting-Recording-Microphone/dp/B004J3X47A/ref=asc_df_B004J3X47A?mcid=2acfeb734c673ac5ad9427b8020f16f5&hvocijid=13477148152437539204-B004J3X47A-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=13477148152437539204&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9003544&hvtargid=pla-2281435177898&th=1">
+            <h3>Samson Meteor</h3>
+          </a>
+          <p>
+            <img src="/images/meteor.png" alt="Photo of Samson Meteor Microphone"
+              style="float:right; width:150px; margin:0;">
+            This microphone is our most budget friendly option. This is a USB-only microphone which means
+            it often has lower quality, however this microphone is surprisingly really good. This is the perfect entry level 
+            mic for beginners. For things like streaming this could be the only mic you need, but if you're
+            looking to make music or a podcast, you might want to look into a better mic down the line.
+
+          <p><b>Price: </b>$25</p>
+        </div>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+ 
+        <div id="AT2020">
+          <a style="color:white; font-size:22px;"
+            href="https://www.guitarcenter.com/Audio-Technica/AT2020-Large-Diaphragm-Condenser-Microphone-1273887988703.gc?template=0y7n73MAL4Km&cntry=us&source=4WWRWXGP&utm_medium=paid-search&utm_channel=paid-search&utm_source=google&utm_platform=google&utm_campaign=GC_G_New-Customer_NTM_PLA-PMX_Pro-Audio_Mics_New-Customer_N&utm_ct=pla&utm_tactic=prospecting&utm_segment=pro-audio&utm_term=&utm_content=1273887988703&gad_source=1&gbraid=0AAAAADtcCuwcNm8RMHljBu9w7FsTYM6cx&gclid=CjwKCAjwq7fABhB2EiwAwk-YbGCy6-OP481q5GHgYUlw0xew0bhZFWZw3xtvzltwYzhNxEv0Xk525xoCfXsQAvD_BwE">
+            <h3>Audio-Technica AT2020</h3>
+          </a>
+          <p>
+            <img src="/images/at2020.png" alt="Photo of AT2020 Microphone"
+              style="float:right; width:150px; margin:0;">
+              This is an XLR microphone, meaning it requires an audio interface to get it working.
+              That being said this microphone has been a staple since its creation in 2004.
+              If you watch a lot YouTubers or streamers you've almost definitely seen this microphone more than once.
+            
+          </p>    
+          <p><b>Price: </b>$100</p>
+        </div>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+
+        <div id="NT1">
+          <a style="color:white; font-size:22px;"
+            href="https://rode.com/en-us/microphones/studio-condenser/nt1-signature-series?variant_sku=NT1SIGNATUREBLACK">
+            <h3>Rode NT1 Signature Series</h3>
+          </a>
+          <p>
+            <img src="/images/rodent1.png" alt="Photo of Rode NT1 Signature Series Microphone"
+              style="float:right; width:150px; margin:0;">
+             This microphone isn't a huge price change from the last. Microphones are often created for a specialized purpose.
+             A mic like this would be a bit better for certain things over the AT2020, but to the average listener
+             there wouldn't be a big difference if any. You would want this mic over the AT2020 if you were recording music professionally.
+
+          </p>    
+          <p id="shot"><b>Price: </b>$159</p>
+        </div>
+        
+
+      </div>
+      <br>
+      <div id="shotgun">
+        <h2>Shotgun Microphones</h2>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+
+        <div id="takstar">
+          <a style="color:white; font-size:22px;"
+            href="https://www.amazon.com/gp/product/B0897XBNZP/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0897XBNZP&linkCode=as2&tag=goodt0ca-20&linkId=2d11da4f6b0868d0042d844e3e2215fc">
+            <h3>Takstar SGC-600</h3>
+          </a>
+          <p>
+            <img src="/images/takstar.png" alt="Photo of Takstar SGC-600 Microphone"
+              style="float:right; width:150px; margin:0;">
+              This budget shotgun mic is extremely good for the price. The biggest issue with this microphone lies in the 
+              threshold. Users have reported many issues with background noise. This microphone would be best for things like vlogging
+              as it works best when you're around a foot away.
+          </p>    
+          <p><b>Price: </b>$45</p>
+        </div>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+
+        <div id="micro2">
+          <a style="color:white; font-size:22px;"
+            href="https://www.amazon.com/Rode-VideoMicro-II-Camera-Mount-Microphone/dp/B0BM8HQL6L/ref=asc_df_B0BM8HQL6L?mcid=afe0d554af363ab790e4ae7a0fa30e38&hvocijid=413601721030759176-B0BM8HQL6L-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=413601721030759176&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9003544&hvtargid=pla-2281435180778&th=1">
+            <h3>Rode VideoMicro 2</h3>
+          </a>
+          <p>
+            <img src="/images/rodemicro2.png" alt="Photo of Rode VideoMicro 2 Microphone"
+              style="float:right; width:150px; margin:0;">
+              This is another fairly cheap option when it comes to shotgun mics. This mic isn't as good at
+              cancelling out echo so either being outside or in a dampened room is best. This mic is also 
+              connected via USB-C, meaning it's rather simple to hook up to a phone.
+
+          </p>    
+          <p><b>Price: </b>$80</p>
+        </div>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+
+        <div id="mke600">
+          <a style="color:white; font-size:22px;"
+            href="https://www.amazon.com/dp/B00B0YPAYQ?tag=newlayer-20&linkId=9a3b99cfaed65844de7de27e518243aa&ref_=as_li_ss_tl&geniuslink=true&th=1">
+            <h3>Sennheiser MKE 600</h3>
+          </a>
+          <p>
+            <img src="/images/mke600.png" alt="Photo of Sennheiser MKE 600 Microphone"
+              style="float:right; width:150px; margin:0;">
+              This microphone offers high quality with good noise selection/cancellation. This is an
+              XLR mic however it comes with an XLR to 3.5mm connector. That means this high end mic
+              could be hooked up to a normal phone (if the phone has no 3.5mm jack an adapter would work well).
+          </p>    
+          <p id="lav"><b>Price: </b>$285</p>
+        </div>
+      </div>
+      <br>
+      <div id="lavs">
+        <h2>Lavalier Microphones</h2>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+
+        <div id="boya">
+          <a style="color:white; font-size:22px;"
+            href="https://www.amazon.com/BOYA-Lavalier-Microphone-Smartphones-Camcorders/dp/B00MRMU2HU/ref=asc_df_B00MRMU2HU?mcid=71c0c98f7005394484f28f3c7f0adc55&hvocijid=6861207080292301319-B00MRMU2HU-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=6861207080292301319&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9003544&hvtargid=pla-2281435177818&psc=1">
+            <h3>Boya BY-M1</h3>
+          </a>
+          <p>
+            <img src="/images/boya.png" alt="Photo of AT2020 Microphone"
+              style="float:right; width:150px; margin:0;">
+              This microphone is the best price to quality ratio we were able to find. This lav mic is compatible with
+              phones, cameras, and computers using a 3.5mm jack. This bundle comes with a lapel clip, foam windscreen, and a 3.5mm to 6.3mm adapter.
+              The only downside of this bundle is that it only comes with 1 lavalier mic. This may be okay for your purposes but most retailers sell their
+              mics in packs of 2. That being said $24 for 2 mics is still a good deal.
+          </p>    
+          <p><b>Price: </b>$12</p>
+        </div>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+    
+        <div id="holly">
+          <a style="color:white; font-size:22px;"
+            href="https://www.amazon.com/Hollyland-Microphone-Lightning-Cancellation-Recording/dp/B0CP7P4RRQ?tag=httpthinktv-20&crid=3IX5EOX15R3A1&dib=eyJ2IjoiMSJ9.cRraGNAqT3D3Pu6foN4uzs1RI3ghtI2TtFLMJFHd5PLRfrA2Jd-lVa_tvwKW3AW2mB5bizsncHenLy67uG851S9-LM_gwkwA28j3X53MpVc9dql7XlOBzDbdieTIODjTliboD-Qkj6igJq7kspy6OUBdQMlybJOkylisiYVU1BJBUUU6bWI1HQqFxVKTRVkHv_4TThPsctdBJuyVEkO_1Jlj3lqeqyG1kViTKqKiCJ0.ti3vi4PzgOxbK8YnKGU0YAHzquL9_Jqwx5cdCHskZvg&dib_tag=se&keywords=hollyland%2Blark%2Bm2&qid=1735840102&sprefix=holllyland%2Blark%2Bm%2Caps%2C188&sr=8-1&th=1&linkId=0f33c0224443e71d8f58d94a8805228d&ref_=as_li_ss_tl&geniuslink=true">
+            <h3>Hollyland Lark M2</h3>
+          </a>
+          <p>
+            <img src="/images/hollyland.png" alt="Photo of AT2020 Microphone"
+              style="float:right; width:150px; margin:0;">
+              This bundle comes with 2 lavalier mics that have an advertised 30 hour battery life.
+              These mics are smaller than most wireless lav mics on the market. These are great for phones
+              but they also have compatibility with cameras using 3.5mm jacks. The different versions of this product
+              correspond to their connection type. The cheapest is the USB-C(linked), then is the lightning cable, then the 3.5mm jack
+              These options are sold seperately or in a combo. If you plan to use them with more than 1 connection
+              the bundle for $20-$30 extra is a steal.
+
+          </p>    
+          <p><b>Price: </b>$92</p>
+        </div>
+        <hr style="border: 2px solid rgb(255, 255, 255);">
+    
+        <div id="rodewireless">
+          <a style="color:white; font-size:22px;"
+            href="https://www.amazon.com/Rode-Wireless-2-Person-Microphone-Lavaliers/dp/B0CX2NWHKZ?crid=121YNBHZP3XMD&dib=eyJ2IjoiMSJ9.siZf8clcpg2MAhzxP6saGSfWCY8KNl_imgBz1qz9kKH41C5hzBLuKVlUEWADqoMNNj4vATMkn1xWwTThF3VNzENpEPM8z7yr6Vl6Z3-9TRbR3vqcoqvQzMLhWNMoEint6IPtF6WpW4QKVQH0JHSnLbNCe94RwsexNmcNZu6QEhw4Zhw0e0-UYVb8P96qHTLhb8ZySUEUgFPD9JJqj6RCNE76xk9PJSf0sWY4OOw_24lU_mfqZ4G6yh6X56wPp1HpwSXGemgQFWS6reBB-X9aZFRlYGKTzqjYW2tLoduo4HU.QFFJpYC_zyQn85sbPxmy6-31XfrRBgb22wf0RWPDVq4&dib_tag=se&keywords=rode+wireless+pro&qid=1710516482&sprefix=rode+wireless+pro,aps,126&sr=8-6&ufe=app_do:amzn1.fos.c3015c4a-46bb-44b9-81a4-dc28e6d374b3&linkCode=sl1&tag=fstoppers-20&linkId=52a4ce82e50390250b0c339aaee6e710&language=en_US&ref_=as_li_ss_tl">
+            <h3>Rode Wireless Pro</h3>
+          </a>
+          <p>
+            <img src="/images/rodewirelesspro.png" alt="Photo of AT2020 Microphone"
+              style="float:right; width:150px; margin:0;">
+              These 2 offer over 40 hours of recording. These mics have universal compatibility with cameras
+              and smartphones. These also have the furthest range out of any of the lav mics we've looked at.
+
+          </p>    
+          <p><b>Price: </b>$360-$400</p>
+        </div>
+<br>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; Daniel Schaeffer 2025 <a href="https://themes.getbootstrap.com/terms/">ToS</a> <a href="https://bootstrap.com.sg/privacy-policy/">Privacy</a></p>
+
+  </footer>
+
+</body>
+<style>
+  b {
+    font-size: 20px;
+  }
+
+  #products p {
+    margin-top: 0%;
+    margin-bottom: 0%
+  }
+  .sidebar {
+    height:590%; 
+  }
+  @media (max-width: 600px) {
+    .sidebar {
+      display: none;
+    }
+
+    #content {
+      margin-left: 1%;
+    }
+  }
+
+  @media (max-width:1053px) {
+    #sidetext {
+      padding-top: 60px;
+    }
+
+    #content {
+      padding-top: 75px;
+    }
+  }
+
+
+  h2 {
+    margin-bottom: 0%;
+    text-shadow: 0px 0px 15px black;
+  }
+
+  h1 {
+    text-align: left;
+    text-shadow: -2px 5px 15px black;
+  }
+</style>
+
 </html>
